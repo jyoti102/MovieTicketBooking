@@ -13,6 +13,8 @@ public class TheatreResponse {
 
     private String name;
 
+    private Integer totalScreens;
+
     private String address;
 
     private String city;

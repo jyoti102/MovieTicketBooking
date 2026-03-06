@@ -10,10 +10,11 @@ import lombok.*;
 @Builder
 public class CreateTheatreRequest {
 
-    @NotBlank
+//    @NotBlank
     private String name;
+    private Integer totalScreens;
 
-    @NotBlank
+//    @NotBlank
     private String city;
 
     private String address;

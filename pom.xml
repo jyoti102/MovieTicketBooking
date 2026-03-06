@@ -30,6 +30,7 @@
         <module>discovery-server</module>
         <module>auth-server</module>
         <module>api-gateway</module>
+        <module>theatre-service</module>
     </modules>
 
     <properties>
@@ -45,6 +46,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.30</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -24,6 +24,8 @@ public class Theatre extends BaseEntity {
     @Column(nullable = false)
     private String name;
 
+    private Integer totalScreens;
+
     private String address;
     private String city;
     private String state;
