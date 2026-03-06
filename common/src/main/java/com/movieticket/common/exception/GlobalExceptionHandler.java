@@ -1,6 +1,6 @@
 package com.movieticket.common.exception;
 
-import com.movieticket.common.dto.response.common.ApiResponse;
+import com.movieticket.common.dto.common.ApiResponse;
 import com.movieticket.common.util.ApiResponseUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.*;

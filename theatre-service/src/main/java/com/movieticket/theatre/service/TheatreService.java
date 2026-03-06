@@ -1,6 +1,6 @@
 package com.movieticket.theatre.service;
 
-import com.movieticket.common.dto.response.common.PageResponse;
+import com.movieticket.common.dto.common.PageResponse;
 import com.movieticket.common.dto.theatre.CreateTheatreRequest;
 import com.movieticket.common.dto.theatre.UpdateTheatreRequest;
 import com.movieticket.common.dto.theatre.TheatreResponse;

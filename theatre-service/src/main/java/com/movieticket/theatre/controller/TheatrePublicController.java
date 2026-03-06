@@ -1,7 +1,7 @@
 package com.movieticket.theatre.controller;
 
-import com.movieticket.common.dto.response.common.ApiResponse;
-import com.movieticket.common.dto.response.common.PageResponse;
+import com.movieticket.common.dto.common.ApiResponse;
+import com.movieticket.common.dto.common.PageResponse;
 import com.movieticket.common.dto.theatre.TheatreResponse;
 import com.movieticket.common.util.ApiResponseUtil;
 import com.movieticket.theatre.service.TheatreService;

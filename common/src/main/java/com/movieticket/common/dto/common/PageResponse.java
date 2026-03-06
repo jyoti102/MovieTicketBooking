@@ -1,4 +1,4 @@
-package com.movieticket.common.dto.response.common;
+package com.movieticket.common.dto.common;
 
 import lombok.*;
 

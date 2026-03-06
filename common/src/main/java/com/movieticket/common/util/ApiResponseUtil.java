@@ -1,7 +1,7 @@
 package com.movieticket.common.util;
 
 
-import com.movieticket.common.dto.response.common.ApiResponse;
+import com.movieticket.common.dto.common.ApiResponse;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;

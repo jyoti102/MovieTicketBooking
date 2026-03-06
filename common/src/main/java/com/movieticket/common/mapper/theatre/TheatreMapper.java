@@ -1,13 +1,11 @@
 package com.movieticket.common.mapper.theatre;
 
-import com.movieticket.common.dto.response.common.PageResponse;
 import com.movieticket.common.dto.theatre.CreateTheatreRequest;
 import com.movieticket.common.dto.theatre.TheatreResponse;
 import com.movieticket.common.dto.theatre.UpdateTheatreRequest;
 import com.movieticket.common.entity.theatre.Theatre;
 
 import org.mapstruct.*;
-import org.springframework.data.domain.Page;
 
 import java.util.List;
 
