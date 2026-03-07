@@ -21,9 +21,6 @@ public class ScreenLayout extends BaseEntity {
     private String id;
 
     @Column(nullable = false)
-    private String theatreId;
-
-    @Column(nullable = false)
     private String screenId;
 
     @Column(nullable = false)
