@@ -15,7 +15,7 @@ public interface TheatreMapper {
     /**
      * Create Theatre Entity from Request
      */
-    @Mapping(target = "id", ignore = true)
+//    @Mapping(target = "id", ignore = true)
 //    @Mapping(target = "createdAt", ignore = true)
 //    @Mapping(target = "updatedAt", ignore = true)
     Theatre toEntity(CreateTheatreRequest request);

@@ -1,6 +1,6 @@
 package com.movieticket.common.entity.booking;
 
-import com.movieticket.common.entity.Show;
+import com.movieticket.common.entity.show.Show;
 import com.movieticket.common.entity.common.BaseEntity;
 import com.movieticket.common.entity.user.User;
 import com.movieticket.common.enums.booking.BookingStatus;

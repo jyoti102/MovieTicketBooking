@@ -18,7 +18,7 @@ public class Screen extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    private String screenName;   // Screen 1, Screen 2
+    private String name;   // Screen 1, Screen 2
 
     @Enumerated(EnumType.STRING)
     private ScreenType screenType;
