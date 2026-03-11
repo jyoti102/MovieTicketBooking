@@ -1,15 +1,17 @@
 package com.movieticket.common.mapper.theatre;
 
+import com.movieticket.common.dto.show.TheatreShowResponse;
 import com.movieticket.common.dto.theatre.CreateTheatreRequest;
 import com.movieticket.common.dto.theatre.TheatreResponse;
 import com.movieticket.common.dto.theatre.UpdateTheatreRequest;
 import com.movieticket.common.entity.theatre.Theatre;
 
+import com.movieticket.common.mapper.ShowMapper;
 import org.mapstruct.*;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = ShowMapper.class)
 public interface TheatreMapper {
 
     /**
@@ -38,6 +40,11 @@ public interface TheatreMapper {
      */
     @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void updateEntity(UpdateTheatreRequest request, @MappingTarget Theatre theatre);
+
+    @Mapping(source = "shows", target = "shows")
+    TheatreShowResponse toShowResponse(Theatre theatre);
+
+    List<TheatreShowResponse> toShowResponseList(List<Theatre> theatres);
 
 //
 //    /**

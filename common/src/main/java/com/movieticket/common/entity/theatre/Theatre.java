@@ -1,8 +1,11 @@
 package com.movieticket.common.entity.theatre;
 
 import com.movieticket.common.entity.common.BaseEntity;
+import com.movieticket.common.entity.show.Show;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 @Table(
@@ -31,6 +34,11 @@ public class Theatre extends BaseEntity {
     private String state;
     private String pincode;
 
+    private String locationUrl;
+
     private Double latitude;
     private Double longitude;
+
+    @OneToMany(mappedBy = "theatre")
+    private List<Show> shows;
 }

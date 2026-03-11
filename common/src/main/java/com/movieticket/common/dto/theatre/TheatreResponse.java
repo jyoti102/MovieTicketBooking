@@ -23,6 +23,8 @@ public class TheatreResponse {
 
     private String pincode;
 
+    private String locationUrl;
+
     private Double latitude;
 
     private Double longitude;

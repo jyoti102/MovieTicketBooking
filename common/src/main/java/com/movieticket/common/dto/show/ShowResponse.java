@@ -9,11 +9,15 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
-public class ShowDto {
+public class ShowResponse {
 
     private String id;
 
-    private LocalDateTime startTime;
+    private LocalDateTime showStartTime;
 
-    private String screenType;
+    private LocalDateTime showEndTime;
+
+    private String language;
+
+    private String format;
 }

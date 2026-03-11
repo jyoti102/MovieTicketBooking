@@ -1,11 +1,13 @@
 package com.movieticket.common.entity.movie;
 
 import com.movieticket.common.entity.common.BaseEntity;
+import com.movieticket.common.entity.show.Show;
 import com.movieticket.common.enums.show.MovieStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "movies")
@@ -39,4 +41,7 @@ public class Movie extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private MovieStatus status;
+
+    @OneToMany(mappedBy = "movie")
+    private List<Show> shows;
 }

@@ -9,7 +9,7 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-public class TheatreShowDto {
+public class TheatreShowResponse {
 
     private String id;
 
@@ -19,5 +19,5 @@ public class TheatreShowDto {
 
     private boolean cancellable;
 
-    private List<ShowDto> shows;
+    private List<ShowResponse> shows;
 }

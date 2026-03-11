@@ -20,6 +20,7 @@ public class CreateTheatreRequest {
     private String address;
     private String state;
     private String pincode;
+    private String locationUrl;
 
     private Double latitude;
     private Double longitude;
